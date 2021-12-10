@@ -16,12 +16,12 @@ function App() {
                 <Navigation navOpen={navOpen} setNavOpen={setNavOpen}/>
                 <Routes>
                     <Route path="*" element={
-                        <Page title="CK / 404">
+                        <Page title="TES / 404">
                             <NoMatch/>
                         </Page>
                     } />
-                    <Route exact path="/" element={
-                        <Page title="CK / Home">
+                    <Route path="/" element={
+                        <Page title="TES / Home">
                             <Home/>
                         </Page>
                     } />

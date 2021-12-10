@@ -56,7 +56,7 @@ const Navigation = ({ navOpen, setNavOpen }) => {
     return (
         <StyledNavigation navOpen={navOpen} headerColor={headerColor} textColor={textColor} scrollDir={scrollDir}>
             <div className="header">
-                <Link to="/" className="logo" onClick={navOpen ? handleMenuToggle:undefined}>CAMERON KIRBY</Link>
+                <Link to="/" className="logo" onClick={navOpen ? handleMenuToggle:undefined}>TECNICA</Link>
             </div>
             <div className="nav-toggle" onClick={handleMenuToggle}>
                 <span></span>
