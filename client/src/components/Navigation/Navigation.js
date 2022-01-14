@@ -36,18 +36,8 @@ const Navigation = ({ navOpen, setNavOpen }) => {
         return () => window.removeEventListener("scroll", onScroll);
     }, [scrollDir]);
 
-    let headerColor = "transparent"
-    let textColor = "white"
-
-    if (useLocation().pathname === "/work") {
-        headerColor = "white"
-        textColor = "black"
-    }
-    if(useLocation().pathname === "/profile") {
-        headerColor = "black"
-        textColor = "white"
-    }
-
+    let headerColor = "white"
+    let textColor = "black"
 
     const handleMenuToggle = () => {
         setNavOpen(prevNavOpen => !prevNavOpen)

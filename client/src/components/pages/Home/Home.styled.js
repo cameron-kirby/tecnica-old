@@ -3,7 +3,7 @@ import styled from "styled-components"
 export const StyledHome = styled.div`
     .hero-slider {
         /*padding-top: 500px;*/
-        height: 100vh;
+        height: 90vh;
         background-color: var(--green);
 
         .swiper {
@@ -90,6 +90,76 @@ export const StyledHome = styled.div`
             }
             }
 
+        }
+    }
+
+    .keystats {
+        margin-top:-75px;
+        padding-bottom: 15px;
+        position:relative;
+        z-index:2;
+
+        .container {
+            padding-left: 40px;
+            padding-right: 40px;
+
+            .row {
+                display: flex;
+                flex-wrap: wrap;
+                margin-right: -15px;
+                margin-left: -15px;
+
+                .col {
+                    flex-basis: 0;
+                    flex-grow: 1;
+                    max-width: 100%;
+                    padding-right: 15px;
+                    padding-left: 15px;
+
+                    .keystat__box {
+                        background: #fff;
+                        padding: 20px;
+                        height: 100%;
+
+                        .keystat__heading {
+                            font-size: 1rem;
+                            color: #c8102e;
+                            line-height: 1;
+                            margin-bottom: 10px;
+                            
+                            &:after {
+                                content: "—";
+                                margin-left: 0.625em;
+                                margin-right: 1em;
+                                display: inline-block;
+                                transform-origin: center left;
+                                transform: scaleX(2);
+                            }
+                        }
+
+                        .keystat__value {
+                            font-size: 3.25rem;
+                            font-weight: 700;
+                            color: #343434;
+                            line-height: 1;
+
+                            .keystat__icon {
+                                display: inline;
+                                max-width: 40px;
+                                margin-left: 20px;
+                                max-height: 36px;
+
+                                svg {
+                                    width: 36px;
+                                    height: 36px;
+                                    fill: gray;
+                                    vertical-align: unset;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 `
