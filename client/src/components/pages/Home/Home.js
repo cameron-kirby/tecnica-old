@@ -71,7 +71,7 @@ const Home = () => {
                 </Swiper>
             </section>
             <section className="keystats">
-                <div className="container">
+                <div className="container-fluid">
                     <div className="row"> 
                         <div className="col">
                             <div className="keystat__box">

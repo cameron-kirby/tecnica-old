@@ -1,10 +1,11 @@
 import styled from "styled-components"
 
 export const StyledHome = styled.div`
+    background: #e6e6e6;
+
     .hero-slider {
         /*padding-top: 500px;*/
         height: 90vh;
-        background-color: var(--green);
 
         .swiper {
             height: 100%;
@@ -152,10 +153,15 @@ export const StyledHome = styled.div`
     }
 
     .recent {
-
+        background: #e6e6e6;
+        padding-top: 70px;
+        padding-bottom: 70px;
     }
 
     .partners {
+        background-color:#ffffff;
+        padding-top: 70px;
+        padding-bottom: 70px;
 
         .partners__row {
             padding-bottom: 40px;

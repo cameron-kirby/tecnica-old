@@ -1,7 +1,16 @@
 
 .container-fluid {
-    padding-left: 40px;
-    padding-right: 40px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1500px;
+
+    @media (min-width:961px){
+        padding-left: 40px;
+        padding-right: 40px;
+    }
 }
 
 .row {
