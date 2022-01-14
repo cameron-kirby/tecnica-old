@@ -2,11 +2,11 @@ import React from "react"
 import { StyledHome } from './Home.styled'
 
 // Swiper
-import { Swiper, SwiperSlide } from 'swiper/react/swiper-react.js';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Parallax } from 'swiper';
-import 'swiper/swiper.min.css'; // core Swiper
-import 'swiper/modules/navigation/navigation.min.css'; // Navigation module
-import 'swiper/modules/pagination/pagination.min.css'; // Pagination module
+import 'swiper/css'; // core Swiper
+import 'swiper/css/navigation'; // Navigation module
+import 'swiper/css/pagination'; // Pagination module
 
 const background1 = {
     backgroundImage: "url('https://images.unsplash.com/photo-1578934191836-ff5f608c2228?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80')",
