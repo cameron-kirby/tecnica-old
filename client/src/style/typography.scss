@@ -74,7 +74,8 @@ h1, h2, h3, h4, h5, h6 {
   /* Links */
   a {
       text-decoration: none;
-      color:vars.$green;
+      color:vars.$black;
+      transition: vars.$transition-main;
 
       &:hover {
           color: vars.$black;

@@ -156,6 +156,72 @@ export const StyledHome = styled.div`
         background: #e6e6e6;
         padding-top: 70px;
         padding-bottom: 70px;
+
+        .grid__cell, .grid__cell--wide {
+            margin-bottom: 30px;
+            position: relative;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+
+            .card__post {
+                height: 100%;
+                background: #fff;
+                display: flex;
+                flex-direction: column;
+                overflow: hidden;
+                transition: .25s ease;
+                min-height: 340px;
+                background-position: center;
+                background-size: cover;
+                position: relative;
+                min-height: 400px;
+                
+                .card__img {
+                    background-position: center;
+                    background-size: cover;
+                    flex: 1;
+                    flex-basis: 50%;
+                }
+
+                .card__details {
+                    padding: 25px;
+
+                    .card__type {
+                        display: inline-block;
+                        max-width: 100%;
+                        position: relative;
+                        color: #c8102e;
+                        font-size: .875rem;
+                        font-weight: 400;
+
+                        &:after {
+                            content: "—";
+                            margin-left: 0.625em;
+                            margin-right: 1em;
+                            display: inline-block;
+                            transform-origin: center left;
+                            transform: scaleX(2);
+                        }
+                    }
+
+                    .card__title {
+                        font-size: 1.125rem;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+
+        .grid__cell {
+            flex: 0 0 25%;
+            max-width: 25%;
+        }
+
+        .grid__cell--wide {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
     }
 
     .partners {

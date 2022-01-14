@@ -20,6 +20,13 @@ const background2 = {
     backgroundImage: "url('https://images.unsplash.com/photo-1578934191836-ff5f608c2228?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80')",
 };
 
+const gridBg = {
+    backgroundImage: "url('https://via.placeholder.com/500')",
+};
+const gridWide = {
+    backgroundImage: "url('https://via.placeholder.com/300x100')",
+};
+
 const Home = () => {
 
     return (
@@ -113,7 +120,68 @@ const Home = () => {
                 </div>
             </section>
             <section className="recent">
-
+                <div className="container-fluid">
+                    <div className="grid">
+                        <div className="grid__cell">
+                            <Link to='/' className="card__link">
+                                <div className="card__post">
+                                    <div className="card__img" style={gridBg}></div>
+                                    <div className="card__details">
+                                        <h4 className="card__type">News</h4>
+                                        <h3 className="card__title">Hello this is a card title</h3>
+                                    </div>
+                                </div>
+                            </Link>
+                        </div>
+                        <div className="grid__cell--wide">
+                            <Link to='/' className="card__link">
+                                <div className="card__post">
+                                    <div className="card__img" style={gridWide}></div>
+                                    <div className="card__details">
+                                        <h4 className="card__type">News</h4>
+                                        <h3 className="card__title">Hello this is a card title</h3>
+                                        <p className="card__body">This is a card body</p>
+                                    </div>
+                                </div>
+                            </Link>
+                        </div>
+                        <div className="grid__cell">
+                            <Link to='/' className="card__link">
+                                <div className="card__post">
+                                    <div className="card__img" style={gridBg}></div>
+                                    <div className="card__details">
+                                        <h4 className="card__type">News</h4>
+                                        <h3 className="card__title">Hello this is a card title</h3>
+                                    </div>
+                                </div>
+                            </Link>
+                        </div>
+                        <div className="grid__cell--wide">
+                            <Link to='/' className="card__link">
+                                <div className="card__post">
+                                    <div className="card__img" style={gridWide}></div>
+                                    <div className="card__details">
+                                        <h4 className="card__type">News</h4>
+                                        <h3 className="card__title">Hello this is a card title</h3>
+                                        <p className="card__body">This is a card body</p>
+                                    </div>
+                                </div>
+                            </Link>
+                        </div>
+                        <div className="grid__cell--wide">
+                            <Link to='/' className="card__link">
+                                <div className="card__post">
+                                    <div className="card__img" style={gridWide}></div>
+                                    <div className="card__details">
+                                        <h4 className="card__type">News</h4>
+                                        <h3 className="card__title">Hello this is a card title</h3>
+                                        <p className="card__body">This is a card body</p>
+                                    </div>
+                                </div>
+                            </Link>
+                        </div>
+                    </div>
+                </div>
             </section>
             <section className="partners">
                 <div className="container-fluid">
