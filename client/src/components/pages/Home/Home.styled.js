@@ -176,6 +176,10 @@ export const StyledHome = styled.div`
                 background-size: cover;
                 position: relative;
                 min-height: 400px;
+
+                &:hover {
+                    box-shadow: 0 0 15px rgb(0 0 0 / 20%);
+                }
                 
                 .card__img {
                     background-position: center;
