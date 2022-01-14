@@ -1,8 +1,9 @@
 import React from "react"
+import { Link } from "react-router-dom";
 import { StyledHome } from './Home.styled'
 
 // Icons
-import { Briefcase, Face, Calendar } from '@styled-icons/boxicons-solid'
+import { Briefcase, Face, Calendar, Component } from '@styled-icons/boxicons-solid'
 
 // Swiper
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -106,6 +107,39 @@ const Home = () => {
                                     </div>
                                 </div>
                                 <div className="keystat__subtext">YEARS</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section className="recent">
+
+            </section>
+            <section className="partners">
+                <div className="container-fluid">
+                    <div className="partners__row">
+                        <h3 className="underline">
+                            Partners & Clients
+                            <Link to="/partners">View All</Link>
+                        </h3>
+                        <div className="row partners__content">
+                            <div className="partners__logo">
+                                <Component/>
+                            </div>
+                            <div className="partners__logo">
+                                <Component/>
+                            </div>
+                            <div className="partners__logo">
+                                <Component/>
+                            </div>
+                            <div className="partners__logo">
+                                <Component/>
+                            </div>
+                            <div className="partners__logo">
+                                <Component/>
+                            </div>
+                            <div className="partners__logo">
+                                <Component/>
                             </div>
                         </div>
                     </div>

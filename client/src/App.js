@@ -1,5 +1,6 @@
 import React, { useState, useRef } from "react";
 import './App.css';
+import './style/app.scss'
 import { useOnClickOutside } from "./hooks";
 import { Routes, Route } from "react-router-dom";
 import { Navigation, Page } from "./components"

@@ -1,0 +1,86 @@
+@use 'vars';
+/* ======
+  Fonts
+====== */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+/* ============
+  Typography
+============ */
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+  }
+  /* Font Size */
+  h1 {
+    font-size: vars.$heading-large;
+  }
+  h2 {
+    font-size: vars.$heading-medium;
+  }
+  h3 {
+    font-size: vars.$heading-small;
+  }
+  h4 {
+    font-size: vars.$heading-small - .2rem;
+  }
+  h5 {
+    font-size: vars.$heading-small - .4rem;
+  }
+  h6 {
+    font-size: vars.$heading-small - .6rem;
+  }
+  @media (max-width:481px)  { 
+    h1 {
+      font-size: vars.$mobile-heading-large;
+    }
+    h2 {
+      font-size: vars.$mobile-heading-medium;
+    }
+    h3 {
+      font-size: vars.$mobile-heading-small;
+    }
+    h4 {
+      font-size: vars.$mobile-heading-small - .2rem;
+    }
+    h5 {
+      font-size: vars.$mobile-heading-small - .4rem;
+    }
+    h6 {
+      font-size: vars.$mobile-heading-small - .6rem;
+    }
+  }
+  
+  /* Font Weight */
+  h1, h2 {
+    font-weight: 900;
+  }
+  h3, h4, h5, h6 {
+    font-weight: 800;
+  }
+  /* Paragraphs */
+  p {
+    margin: 0;
+    font-size: vars.$paragraph;
+  }
+  /* Lists */
+  ol, ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  /* Links */
+  a {
+      text-decoration: none;
+      color:vars.$green;
+
+      &:hover {
+          color: vars.$black;
+      }
+  }
+  /* Active link */
+  .isActive {
+    color: vars.$black !important;
+  }

@@ -99,64 +99,104 @@ export const StyledHome = styled.div`
         position:relative;
         z-index:2;
 
-        .container {
-            padding-left: 40px;
-            padding-right: 40px;
+        .col {
+            flex-basis: 0;
+            flex-grow: 1;
+            max-width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
 
-            .row {
-                display: flex;
-                flex-wrap: wrap;
-                margin-right: -15px;
-                margin-left: -15px;
+            .keystat__box {
+                background: #fff;
+                padding: 20px;
+                height: 100%;
 
-                .col {
-                    flex-basis: 0;
-                    flex-grow: 1;
-                    max-width: 100%;
-                    padding-right: 15px;
-                    padding-left: 15px;
-
-                    .keystat__box {
-                        background: #fff;
-                        padding: 20px;
-                        height: 100%;
-
-                        .keystat__heading {
-                            font-size: 1rem;
-                            color: #c8102e;
-                            line-height: 1;
-                            margin-bottom: 10px;
+                .keystat__heading {
+                    font-size: 1rem;
+                    color: #c8102e;
+                    line-height: 1;
+                    margin-bottom: 10px;
                             
-                            &:after {
-                                content: "—";
-                                margin-left: 0.625em;
-                                margin-right: 1em;
-                                display: inline-block;
-                                transform-origin: center left;
-                                transform: scaleX(2);
-                            }
+                    &:after {
+                        content: "—";
+                        margin-left: 0.625em;
+                        margin-right: 1em;
+                        display: inline-block;
+                        transform-origin: center left;
+                        transform: scaleX(2);
+                    }
+                }
+
+                .keystat__value {
+                    font-size: 3.25rem;
+                    font-weight: 700;
+                    color: #343434;
+                    line-height: 1;
+
+                    .keystat__icon {
+                        display: inline;
+                        max-width: 40px;
+                        margin-left: 20px;
+                        max-height: 36px;
+
+                        svg {
+                            width: 36px;
+                            height: 36px;
+                            fill: gray;
+                            vertical-align: unset;
                         }
+                    }
+                }
+            }
+        }
+    }
 
-                        .keystat__value {
-                            font-size: 3.25rem;
-                            font-weight: 700;
-                            color: #343434;
-                            line-height: 1;
+    .recent {
 
-                            .keystat__icon {
-                                display: inline;
-                                max-width: 40px;
-                                margin-left: 20px;
-                                max-height: 36px;
+    }
 
-                                svg {
-                                    width: 36px;
-                                    height: 36px;
-                                    fill: gray;
-                                    vertical-align: unset;
-                                }
-                            }
-                        }
+    .partners {
+
+        .partners__row {
+            padding-bottom: 40px;
+
+            .underline {
+                position: relative;
+                padding-bottom: 15px;
+                border-bottom: 1px solid #bababa;
+
+                a {
+                    display: block;
+                    position: absolute;
+                    right: 0.25rem;
+                    top: 0;
+
+                    :after {
+                        content: "→";
+                        transform: translateY(5%) translateX(0.25rem);
+                        display: inline-block;
+                        transform-origin: center left;
+                        transition: all .25s ease;
+                    }
+                }
+            }
+
+            .partners__content {
+                align-items: center;
+                justify-content: center;
+
+                .partners__logo {
+                    text-align: center;
+                    margin-top: 60px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    flex: 0 0 16.6666666667%;
+                    max-width: 16.6666666667%;
+
+                    svg {
+                        max-width: 65%;
+                        margin: auto;
                     }
                 }
             }
