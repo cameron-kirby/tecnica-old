@@ -9,6 +9,7 @@
     "react-scripts": "4.0.3",
     "swiper": "^7.4.1"
   },
+  "license": "UNLICENSED",
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts --openssl-legacy-provider build",
