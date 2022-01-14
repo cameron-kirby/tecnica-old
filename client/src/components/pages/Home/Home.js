@@ -46,8 +46,6 @@ const Home = () => {
                                 </div>
                                 <div className="clearfix"></div>
                                 <div data-swiper-parallax="500" className="slide-btns">
-                                    <a href="#" className="theme-btn-s2">Learn more</a>
-                                    <a href="#" className="theme-btn-s3"><i className="fas fa-chevron-circle-right"></i>Get Info</a>
                                 </div>
                             </div>
                         </div>
@@ -63,8 +61,7 @@ const Home = () => {
                                 </div>
                                 <div className="clearfix"></div>
                                 <div data-swiper-parallax="500" className="slide-btns">
-                                    <a href="#" className="theme-btn-s2">Learn more</a>
-                                    <a href="#" className="theme-btn-s3"><i className="fas fa-chevron-circle-right"></i>Get Info</a>
+                                    
                                 </div>
                             </div>
                         </div>
